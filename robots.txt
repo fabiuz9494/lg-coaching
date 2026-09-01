@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Google-Extended non e' un programma che gira: e' la parola d'ordine con cui
+# si dice a Google di non usare questi testi per addestrare Gemini. Bloccarlo
+# non tocca la posizione nei risultati (regola 57).
+User-agent: Google-Extended
+Disallow: /
+
+# Passa chi manda gente, resta fuori chi prende e basta (regola 56).
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://lgcoaching.it/sitemap.xml

@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- anteprima quando il link viene mandato su WhatsApp, Instagram, Facebook
+     Dominio deciso con Lorenzo: lgcoaching.it. Finché il dominio non è
+     acceso il sito sta su GitHub Pages, ma questi indirizzi restano quelli
+     definitivi: sono quelli che finiscono nell'anteprima e su Google. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="LG Coaching">
+<meta property="og:title" content="LG Coaching — Lorenzo Gubertini, personal trainer">
+<meta property="og:description" content="Programmi di allenamento su misura, coaching online 1:1 e allenamenti in presenza a Buccinasco. La prima consulenza è gratuita.">
+<meta property="og:image" content="https://fabiuz9494.github.io/lg-coaching/img/og.jpg?v=9">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://fabiuz9494.github.io/lg-coaching/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://fabiuz9494.github.io/lg-coaching/img/og.jpg?v=9">
+<link rel="canonical" href="https://lgcoaching.it/">
+
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<meta name="theme-color" content="#111112">
+
+<title>LG Coaching — Lorenzo Gubertini, personal trainer</title>
+<meta name="description" content="Programmi di allenamento su misura, coaching online 1:1 e allenamenti in presenza a Buccinasco. La prima consulenza è gratuita.">
+
+<style>
+/* ---------- CARATTERI ----------
+   Stanno in font/, dentro questa cartella: il browser di chi visita non
+   contatta Google, quindi il suo indirizzo non esce di qui.
+
+   Tre caratteri, e ognuno fa un mestiere:
+     Archivo Black — i titoloni: peso e mole, come voleva lui;
+     Chakra Petch  — le scritte piccole maiuscole: ha gli ANGOLI TAGLIATI
+                     come le lettere del logo, quindi la riga "COACHING"
+                     del marchio ritorna in tutte le etichette del sito;
+     Barlow        — i paragrafi, che devono solo leggersi bene. */
+@font-face{
+  font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;
+  src:url('font/archivo-black-400-latin-ext-297007.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;
+  src:url('font/archivo-black-400-latin-45f5d4.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Chakra Petch';font-style:normal;font-weight:600;font-display:swap;
+  src:url('font/chakra-petch-600-latin-ext-028969.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:'Chakra Petch';font-style:normal;font-weight:600;font-display:swap;
+  src:url('font/chakra-petch-600-latin-7a4938.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Chakra Petch';font-style:normal;font-weight:700;font-display:swap;
+  src:url('font/chakra-petch-700-latin-ext-5771d1.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:'Chakra Petch';font-style:normal;font-weight:700;font-display:swap;
+  src:url('font/chakra-petch-700-latin-893df0.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;
+  src:url('font/barlow-400-latin-ext-50e47d.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;
+  src:url('font/barlow-400-latin-acc3a2.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;
+  src:url('font/barlow-500-latin-ext-9afb00.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;
+  src:url('font/barlow-500-latin-81281c.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;
+  src:url('font/barlow-600-latin-ext-5e03ee.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;
+  src:url('font/barlow-600-latin-4b3ff0.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Barlow';font-style:normal;font-weight:700;font-display:swap;
+  src:url('font/barlow-700-latin-ext-713fe2.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:'Barlow';font-style:normal;font-weight:700;font-display:swap;
+  src:url('font/barlow-700-latin-c68ac8.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* ============ COLORI ============
+   NON scelti a occhio: campionati dal logo vero di Lorenzo
+   (img-originali/LG COACHING logo.jpeg). Il suo fondo è un nero neutro
+   #090909, il suo oro va da #875c1f nelle ombre a #dbb272 nei riflessi.
+   Il medio campionato (#b28542) sullo schermo risultava però spento: il
+   logo è una foto di una targa, quindi il colore che si misura è già
+   smorzato dalla luce dell'ambiente. Qui si usa la stessa tinta ma alzata
+   di luce e saturazione — resta il suo oro, acceso come una vernice
+   invece che come una fotografia.
+   Regola fissa: l'oro sta sui fondi pieni, MAI sopra una foto. */
+:root{
+  --nero:#08080a;
+  --antracite:#111112;
+  --antracite-2:#17171a;
+  --antracite-3:#202024;
+  --oro:#d8a445;
+  --oro-chiaro:#f2cf8e;
+  --avorio:#f5f2ec;
+  --grigio:#a3a3a8;
+  --bordo:rgba(245,242,236,.13);
+
+  --display:'Archivo Black', Impact, sans-serif;
+  --sigla:'Chakra Petch', 'Barlow', sans-serif;
+  --testo:'Barlow', system-ui, sans-serif;
+  --easing:cubic-bezier(.16,.8,.24,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+/* clip e non hidden: "hidden" spegnerebbe position:sticky in tutta la pagina */
+html{scroll-behavior:smooth;overflow-x:clip;}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} }
+body{
+  margin:0;background:var(--antracite);color:var(--avorio);
+  font-family:var(--testo);font-weight:400;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:clip;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+
+/* i ritorni a capo: il browser bilancia le righe da solo, a ogni larghezza */
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;line-height:1.02;text-transform:uppercase;letter-spacing:-.012em;}
+p{margin:0;text-wrap:pretty;}
+li,figcaption,blockquote{text-wrap:pretty;}
+
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,64px);}
+section{position:relative;}
+/* il respiro delle sezioni: due di questi si sommano fra una fascia e
+   l'altra, quindi il numero qui va letto sempre raddoppiato */
+.fascia{padding:clamp(32px,4vw,52px) 0;}
+.fascia-2{background:var(--antracite-2);}
+
+/* ---- le etichette piccole, in Chakra Petch come la riga "COACHING" ---- */
+.label{
+  font-family:var(--sigla);font-size:11.5px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--oro-chiaro);font-weight:700;
+  display:inline-flex;align-items:center;gap:12px;
+}
+.label::before{content:'';width:7px;height:7px;background:var(--oro);flex:none;transform:rotate(45deg);}
+/* sopra una foto il colore da solo non basta mai: serve la pastiglia scura */
+.label--su-foto{
+  font-family:var(--sigla);display:inline-block;
+  color:var(--avorio);font-weight:700;letter-spacing:.18em;font-size:10.5px;
+  text-transform:uppercase;
+  padding:7px 14px;border-radius:999px;
+  background:rgba(8,9,10,.66);border:1px solid rgba(242,207,142,.55);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  text-shadow:0 1px 3px rgba(6,7,8,.9);
+}
+
+h2 em,h3 em,.tit-sezione em{font-style:normal;color:var(--oro);}
+.tit-sezione{font-size:clamp(30px,4.6vw,58px);margin-top:18px;}
+.sotto-sezione{margin-top:20px;font-size:16.5px;color:var(--grigio);max-width:54ch;}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--easing),transform .8s var(--easing);}
+.rv.rv-in{opacity:1;transform:translateY(0);}
+@media (prefers-reduced-motion:reduce){ .rv{opacity:1;transform:none;transition:none;} }
+
+/* ============ PULSANTI ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--sigla);
+  padding:16px 26px;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
+  border:1px solid transparent;
+  transition:transform .3s var(--easing),background .3s var(--easing),color .3s var(--easing),border-color .3s var(--easing);
+}
+/* l'icona non deve mai decidere l'altezza del pulsante: misura fissa qui */
+.ico{width:17px;height:17px;flex:0 0 auto;}
+.barra-mobile .ico{width:15px;height:15px;}
+.btn-oro{background:var(--oro);color:var(--nero);}
+.btn-oro:hover{background:var(--oro-chiaro);transform:translateY(-2px);}
+.btn-vuoto{background:transparent;border-color:rgba(245,242,236,.34);color:var(--avorio);}
+.btn-vuoto:hover{background:var(--avorio);color:var(--nero);border-color:var(--avorio);}
+
+/* ============ TESTATA ============
+   A sinistra la testata sta sul fondo pieno, ma a destra sconfina sopra il
+   pannello della foto: lì il menu si scioglierebbe dentro l'immagine.
+   Quindi fascia scura sfumata dietro, che sparisce appena compare il fondo
+   solido allo scorrimento. */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px clamp(20px,5vw,64px);color:var(--avorio);
+  text-shadow:0 1px 6px rgba(6,7,8,.75);
+  transition:background .45s var(--easing),padding .4s var(--easing),box-shadow .4s var(--easing),text-shadow .4s var(--easing);
+}
+.site-header::before{
+  content:'';position:absolute;left:0;right:0;top:0;height:170px;
+  background:linear-gradient(180deg,rgba(6,7,8,.88) 0%,rgba(6,7,8,.6) 44%,rgba(6,7,8,.24) 74%,rgba(6,7,8,0) 100%);
+  pointer-events:none;z-index:-1;transition:opacity .45s var(--easing);
+}
+.site-header.is-scrolled::before{opacity:0;}
+@media (max-width:999px){ .site-header::before{display:none;} }
+.site-header.is-scrolled{text-shadow:none;
+  background:rgba(8,8,10,.94);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  padding:11px clamp(20px,5vw,64px);
+  box-shadow:0 8px 30px rgba(0,0,0,.45);
+}
+.brand{display:flex;align-items:center;gap:13px;}
+/* il monogramma del logo, scontornato: attorno all'oro è trasparente,
+   quindi sta su qualsiasi fondo senza riquadro nero attorno */
+.brand-logo{height:44px;width:auto;flex:none;transition:height .4s var(--easing);}
+.site-header.is-scrolled .brand-logo{height:36px;}
+.brand-nome{font-family:var(--display);font-size:16px;letter-spacing:.03em;line-height:1.1;}
+.brand-nome small{
+  display:block;font-family:var(--sigla);font-size:9.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--oro-chiaro);font-weight:600;margin-top:4px;
+}
+/* Il nome resta visibile a QUALSIASI larghezza, telefono compreso.
+   C'era una regola che sotto i 520 px lasciava il solo monogramma, per non
+   schiacciare il pulsante del menu: sbagliata, perche' sotto i 1000 px il
+   menu non c'e' proprio (riga qui sotto) e la testata ha solo il marchio.
+   Risultato: sul telefono spariva il nome di Lorenzo, che e' esattamente
+   la cosa che il sito deve far ricordare. */
+.nav-mobile{display:none;}
+@media (max-width:1000px){
+  .nav-mobile{display:flex;gap:8px;align-items:center;}
+  .nav-mobile a{
+    font-family:var(--sigla);font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;
+    color:var(--oro-chiaro);padding:13px 7px;   /* 44px di area: regola 30 */      /* niente riquadro: era una gabbia di troppo accanto al marchio */
+  }
+  /* il tasto a tre righe sta all'estrema destra, staccato dai due testi */
+  .menu-tasto{
+    width:44px;height:44px;                        /* area da toccare (regola 30) */
+    margin-left:6px;display:flex;flex-direction:column;justify-content:center;gap:5px;
+    align-items:flex-end;background:none;border:0;padding:0 2px;cursor:pointer;
+  }
+  .menu-tasto span{display:block;height:2px;width:22px;background:var(--oro-chiaro);
+    transition:transform .28s var(--easing),opacity .2s var(--easing);}
+  .menu-tasto span:nth-child(2){width:16px;}
+  .menu-tasto[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);width:22px;}
+  .menu-tasto[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .menu-tasto[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);width:22px;}
+
+  .menu-pieno{
+    position:absolute;top:100%;left:0;right:0;z-index:5;
+    display:flex;flex-direction:column;
+    background:rgba(8,8,10,.97);
+    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+    border-top:1px solid var(--bordo);
+    padding:6px clamp(20px,5vw,64px) 14px;
+  }
+  .menu-pieno[hidden]{display:none;}
+  .menu-pieno a{
+    font-family:var(--sigla);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:600;color:var(--avorio);padding:15px 0;border-bottom:1px solid var(--bordo);
+  }
+  .menu-pieno a:last-child{border-bottom:0;color:var(--oro-chiaro);}
+}
+.nav-desktop{display:flex;gap:28px;align-items:center;}
+.nav-desktop a{font-family:var(--sigla);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:6px 0;position:relative;}
+.nav-desktop a::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--oro);
+  transform:scaleX(0);transform-origin:right;transition:transform .35s var(--easing);
+}
+.nav-desktop a:hover::after{transform:scaleX(1);transform-origin:left;}
+.nav-desktop .btn-nav{display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--oro);padding:10px 20px;font-size:11px;
+  letter-spacing:.16em;background:var(--oro);color:var(--nero);font-weight:700;
+}
+.nav-desktop .btn-nav::after{display:none;}
+.nav-desktop .btn-nav:hover{background:var(--oro-chiaro);border-color:var(--oro-chiaro);}
+@media (max-width:1000px){ .nav-desktop{display:none;} }
+
+/* ============ APERTURA ============
+   Il titolo NON sta sopra la foto: sta su fondo pieno, e la foto vive nel
+   suo pannello accanto. Così la scritta si legge sempre, qualunque foto
+   arrivi da Lorenzo, e non serve nessun velo a spegnere l'immagine. */
+/* due misure di seguito, non e' un doppione: svh e' l'altezza dello schermo
+   al netto delle barre del telefono, ma la capiscono solo i browser dal 2022
+   in poi. Gli iPhone piu' vecchi leggono la prima riga e ignorano la seconda,
+   quindi l'apertura resta alta uno schermo lo stesso. */
+.hero{background:var(--nero);min-height:100vh;min-height:min(100svh,880px);display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;}
+@media (min-width:1000px){ .hero{grid-template-columns:1.06fr .94fr;} }
+.hero-testo{
+  display:flex;flex-direction:column;justify-content:flex-start;min-width:0;
+  padding:clamp(92px,9vh,102px) clamp(20px,5vw,64px) clamp(36px,4.5vw,56px);
+}
+.hero h1{font-size:clamp(38px,4.8vw,74px);max-width:14ch;margin-top:22px;}
+.hero h1 em{font-style:normal;color:var(--oro);}
+.hero h1 .capo{display:block;}
+/* anche qui le due righe le sceglie Fabio: niente limite in ch, e il
+   ritorno a capo scritto a mano si accende solo dove c'e' posto */
+.hero-frase{
+  margin-top:26px;min-width:0;
+  font-size:clamp(15px,1.15vw,17.5px);font-weight:500;line-height:1.7;color:var(--grigio);
+}
+.hero-frase br{display:none;}
+@media (min-width:1200px){ .hero-frase br{display:inline;} }
+.hero-azioni{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px;}
+.hero-foto{position:relative;overflow:hidden;background:var(--antracite-3);}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:center 34%;}
+/* la pastiglia è ancorata all'angolo: il max-width tiene conto dei due
+   margini, altrimenti sul telefono la coda finisce fuori dall'immagine */
+.hero-foto .label--su-foto{
+  position:absolute;left:clamp(14px,2vw,22px);bottom:clamp(14px,2vw,22px);z-index:2;
+  max-width:calc(100% - 2 * clamp(14px,2vw,22px));
+}
+@media (max-width:999px){
+  .hero .label{display:none;}
+  .hero-testo{padding-top:78px;}
+  #risposte .label{display:none;}
+  #risposte .tit-sezione{margin-top:0;}
+  .hero{min-height:0;}
+  /* sul telefono il riquadro e' 4/3 e mostra 1197px del file: al 34% il taglio
+     cadeva 23px SOPRA la testa e gli tagliava i capelli. Il 16% lascia ~30px di
+     aria sopra la testa, cosi' la schiena si vede tutta. */
+  .hero-foto{aspect-ratio:4/3;}
+  .hero-foto img{object-position:50% 8%;}   /* 21/08: l'inquadratura scende un filo (Fabio) */
+  .hero-azioni .btn{flex:1 1 100%;}
+}
+
+/* ============ BARRA DEI NUMERI ============
+   Subito sotto l'apertura: le prove arrivano prima dei discorsi. */
+.numeri{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo);
+}
+@media (min-width:820px){ .numeri{grid-template-columns:repeat(4,minmax(0,1fr));} }
+/* min-width:0: senza, una casella della griglia non si lascia stringere
+   sotto la larghezza del suo contenuto, e sul telefono l'ultima etichetta
+   finiva mezza fuori dallo schermo invece di andare a capo */
+.numero{
+  min-width:0;
+  padding:clamp(26px,3.4vw,42px) clamp(18px,2.4vw,32px);
+  border-right:1px solid var(--bordo);border-bottom:1px solid var(--bordo);
+}
+@media (min-width:820px){
+  .numero{border-bottom:0;}
+  .numero:last-child{border-right:0;}
+}
+@media (max-width:819px){
+  .numero:nth-child(2n){border-right:0;}
+  .numero:nth-child(n+3){border-bottom:0;}
+}
+.numero .n{font-family:var(--display);font-size:clamp(28px,4.2vw,44px);color:var(--oro);line-height:1;}
+.numero .t{font-family:var(--sigla);font-weight:600;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--grigio);margin-top:12px;}
+
+/* ============ CHI SONO ============ */
+.narrativa{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center;}
+@media (min-width:880px){ .narrativa{grid-template-columns:.92fr 1.08fr;gap:clamp(44px,6vw,84px);} }
+.narrativa-foto{aspect-ratio:4/5;overflow:hidden;position:relative;}
+/* sul telefono la foto arriva ai due bordi dello schermo: la cornice
+   attorno la faceva sembrare un francobollo */
+@media (max-width:879px){
+  .narrativa-foto{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);aspect-ratio:4/4.4;}
+  /* qui il riquadro e' 0.91 e la foto 0.80: il browser toglie il 6% sopra e
+     il 6% sotto. Ancorata in alto, quel taglio cade tutto in basso, sui
+     pantaloni, e sopra la testa resta l'aria che ha il file. */
+  .narrativa-foto img{object-position:50% 0;}
+}
+.narrativa-foto img{width:100%;height:100%;object-fit:cover;}
+.narrativa-testo h2{font-size:clamp(28px,3.6vw,46px);margin-top:18px;}
+.narrativa-testo p{margin-top:22px;font-size:16.5px;color:var(--grigio);max-width:48ch;}
+.titoli{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;padding-top:26px;border-top:1px solid var(--bordo);}
+.titoli span{
+  font-family:var(--sigla);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--oro-chiaro);border:1px solid rgba(216,164,69,.5);padding:8px 14px;
+}
+
+/* ============ LA FRASE ============ */
+.fascia-frase{background:var(--nero);padding:clamp(38px,4.8vw,64px) 0;position:relative;overflow:hidden;}
+.fascia-frase::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(620px 420px at 14% 18%,rgba(216,164,69,.2),transparent 62%),
+    radial-gradient(720px 500px at 86% 88%,rgba(216,164,69,.13),transparent 62%);
+}
+.fascia-frase .wrap{position:relative;text-align:center;}
+/* "Il mio perche'" resta senza nessun segno davanti: e' la frase piu'
+   personale della pagina, e un ornamento la trasformerebbe in una voce di
+   elenco come le altre */
+.fascia-frase .label{margin-bottom:28px;}
+.fascia-frase .label::before{display:none;}
+.fascia-frase blockquote{
+  margin:0 auto;max-width:19ch;font-family:var(--display);text-transform:uppercase;
+  font-size:clamp(26px,4.6vw,58px);line-height:1.06;text-wrap:balance;
+}
+.fascia-frase blockquote em{font-style:normal;color:var(--oro);}
+.fascia-frase .dopo{margin:34px auto 0;max-width:54ch;font-size:16px;color:var(--grigio);}
+
+/* ============ I PERCORSI: righe alternate ============ */
+.riga{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;border-top:1px solid var(--bordo);}
+@media (min-width:880px){
+  .riga{grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:500px;}
+  .riga.inversa .riga-foto{order:2;}
+  .riga.inversa .riga-info{order:1;}
+}
+.riga-foto{position:relative;overflow:hidden;min-height:300px;background:var(--antracite-3);}
+.riga-foto img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform 1.6s var(--easing);}
+/* ATTENZIONE, misurato il 19/08: questo riquadro NON ha un rapporto fisso, lo
+   decide il layout — 1.30 a 390px, 0.92 a 880, 1.45 a 1440, **2.03 a 1900**.
+   A schermo largo del file (1206x1418) se ne vede solo la fascia centrale
+   alta 597px, e la larghezza e' sempre coperta tutta: qui vanno foto in cui
+   il soggetto e' RIPRESO DA LONTANO. Una foto ravvicinata diventa un faccione
+   da 800px, qualunque sia il ritaglio. */
+/* "in presenza": nella fascia centrata Lorenzo restava tagliato a meta' (lui
+   occupa 644px del file, la fascia ne mostra 597). Il 68% fa scorrere la foto
+   in su: si perde il soffitto e si vede quasi tutta la figura. */
+.riga-foto img.giu{object-position:50% 68%;}
+/* "su" = ancorata in alto. Serve alle foto che hanno poca aria sopra la testa:
+   a schermo largo il riquadro e' 2.03 e da un file 1.5 toglierebbe il 13%
+   sopra, cioe' i capelli. Ancorata in alto taglia solo da sotto. */
+.riga-foto img.su{object-position:50% 0;}
+.riga:hover .riga-foto img{transform:scale(1.045);}
+/* la foto sconfina solo verso il bordo ESTERNO della riga, mai verso il testo */
+@media (min-width:880px){
+  .riga:not(.inversa) .riga-foto{margin-left:clamp(-96px,-6vw,-32px);}
+/* la terza riga no: il riquadro che sfora fuori dallo schermo le tagliava il
+   braccio teso, che nella foto sta proprio sul bordo sinistro. */
+.riga.intera .riga-foto{margin-left:0;}
+  .riga.inversa .riga-foto{margin-right:clamp(-96px,-6vw,-32px);}
+}
+.riga-info{display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,64px) clamp(20px,4vw,44px);}
+/* il rombo e il numero stanno su una riga loro, il titolo sotto.
+   align-items:center li mette in mezzo l'uno all'altro: e' lo stesso
+   modo delle etichette di sezione. Provato a metterli in riga col
+   titolo: li' il numero, allineato alla base di un titolo tre volte
+   piu' grande, finiva molto piu' in basso del rombo. */
+.riga-numero{font-family:var(--sigla);font-weight:700;font-size:15px;letter-spacing:.12em;color:var(--oro-chiaro);display:flex;align-items:center;gap:14px;margin-bottom:16px;}
+.riga-numero::before{content:'';width:7px;height:7px;background:var(--oro);transform:rotate(45deg);flex:none;}
+.riga-info h3{font-size:clamp(26px,3.2vw,38px);}
+/* niente max-width in ch: il testo si prende la colonna, cosi' le righe
+   scritte a mano ci stanno e se ne guadagna una. */
+.riga-info .desc{margin-top:16px;font-size:16px;color:var(--grigio);}
+.riga-info .desc br{display:none;}
+@media (min-width:1200px){ .riga-info .desc br{display:inline;} }
+.contatti-lista a{display:inline-flex;align-items:center;gap:8px;}
+.riga-elenco{list-style:none;margin:22px 0 0;padding:0;max-width:44ch;}
+.riga-elenco li{position:relative;padding-left:22px;font-size:15px;color:var(--grigio);margin-bottom:8px;}
+.riga-elenco li::before{content:'';position:absolute;left:2px;top:9px;width:5px;height:5px;background:var(--oro);transform:rotate(45deg);}
+.riga-cta{
+  margin-top:26px;display:inline-flex;align-items:center;gap:10px;width:max-content;max-width:100%;
+  font-family:var(--sigla);
+  padding:14px 26px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
+  border:1px solid var(--oro);color:var(--oro-chiaro);
+  transition:background .3s var(--easing),color .3s var(--easing);
+}
+.riga-cta:hover{background:var(--oro);color:var(--nero);}
+
+/* ============ PREZZI: tre riquadri, quello di mezzo pieno d'oro ============ */
+.prezzi{display:grid;grid-template-columns:minmax(0,1fr);border:1px solid var(--bordo);}
+@media (min-width:900px){ .prezzi{grid-template-columns:repeat(3,minmax(0,1fr));} }
+.card{min-width:0;padding:clamp(28px,3.2vw,40px);border-bottom:1px solid var(--bordo);display:flex;flex-direction:column;}
+@media (min-width:900px){
+  .card{border-bottom:0;border-right:1px solid var(--bordo);}
+  .card:last-child{border-right:0;}
+}
+.card .etichetta{font-family:var(--sigla);font-weight:700;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--grigio);}
+.card h3{font-size:clamp(21px,2.2vw,26px);margin-top:12px;}
+.card .cifra{font-family:var(--display);font-size:clamp(34px,4.2vw,52px);line-height:1;margin-top:22px;color:var(--oro);}
+.card .cifra small{font-family:var(--testo);font-size:13px;font-weight:500;color:var(--grigio);letter-spacing:0;margin-left:8px;}
+/* "Su richiesta" non è una cifra: alla misura dei numeri andava a capo e
+   sembrava un errore. Più piccolo, sta su una riga e resta allineato. */
+.card .cifra.parola{font-size:clamp(22px,2.4vw,28px);}
+.card ul{list-style:none;margin:24px 0 0;padding:0;flex:1;}
+.card li{position:relative;padding-left:22px;font-size:14.5px;color:var(--grigio);margin-bottom:10px;}
+.card li::before{content:'';position:absolute;left:2px;top:8px;width:5px;height:5px;background:var(--oro);transform:rotate(45deg);}
+.card .btn{margin-top:28px;width:100%;}
+/* i pacchetti a 3 e 6 mesi: stanno sotto alla cifra, in tono minore,
+   perche' la cifra che deve restare in testa e' quella d'ingresso */
+.card .listino{margin-top:10px;font-family:var(--sigla);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--grigio);}
+/* il riquadro di mezzo è pieno d'oro: si vede da lontano qual è quello
+   consigliato, ed è lo stesso gesto della demo che gli è piaciuta */
+/* Sul telefono le tre schede facevano quasi due schermate: stessi testi, ma i
+   respiri interni ridistribuiti (regola: il vuoto si toglie da dove ce n'e'
+   troppo, non si aggiunge altrove). */
+@media (max-width:879px){
+  .card{padding:20px 20px 22px;}
+  .card h3{margin-top:7px;}
+  .card .cifra{margin-top:12px;}
+  .card .listino{margin-top:6px;}
+  .card ul{margin-top:14px;}
+  .card li{margin-bottom:6px;padding-left:20px;line-height:1.42;}
+  .card .btn{margin-top:16px;padding:14px 18px;}
+}
+.card.spicca{background:var(--oro);color:var(--nero);}
+.card.spicca .etichetta{color:rgba(8,8,10,.74);}
+.card.spicca .cifra{color:var(--nero);}
+.card.spicca .cifra small{color:rgba(8,8,10,.74);}
+.card.spicca .listino{color:rgba(8,8,10,.74);}
+.card.spicca li{color:rgba(8,8,10,.86);}
+.card.spicca li::before{background:var(--nero);}
+.card.spicca .btn{background:var(--nero);color:var(--oro-chiaro);}
+.card.spicca .btn:hover{background:#000;color:var(--avorio);}
+/* le due note grigie in fondo alle sezioni stanno su UNA riga: spezzate a
+   meta' sembravano un paragrafo interrotto. Niente max-width in ch, si
+   prendono la larghezza della colonna. */
+.nota-prezzi{margin-top:26px;font-size:15px;color:var(--grigio);}
+
+/* ============ TRASFORMAZIONI (prima / dopo) ============ */
+.pd-griglia{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(20px,2.6vw,30px);}
+@media (min-width:700px){ .pd-griglia{grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media (min-width:1060px){ .pd-griglia{grid-template-columns:repeat(3,minmax(0,1fr));} }
+.pd-card{background:var(--antracite-3);border:1px solid var(--bordo);}
+.pd-coppia{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2px;background:var(--bordo);}
+.pd-lato{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--antracite-2);}
+.pd-lato img{width:100%;height:100%;object-fit:cover;}
+/* l'etichetta sta sopra una foto: pastiglia scura, non colore soltanto */
+.pd-lato span{
+  position:absolute;left:10px;bottom:10px;z-index:2;font-family:var(--sigla);
+  font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
+  color:var(--avorio);background:rgba(8,9,10,.68);
+  -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
+  padding:5px 10px;border-radius:999px;text-shadow:0 1px 3px rgba(6,7,8,.9);
+}
+/* la didascalia: nome e mesi, e sono parole di Lorenzo (le cartelle le ha
+   nominate lui). Il nome in chiaro, i mesi in tono minore. */
+.pd-dida{padding:15px 18px;font-size:14px;color:var(--grigio);
+  font-family:var(--sigla);letter-spacing:.08em;text-transform:uppercase;font-weight:600;}
+.pd-dida b{color:var(--avorio);font-weight:700;letter-spacing:.1em;}
+.nota-pd{margin-top:clamp(26px,3vw,36px);font-size:15px;color:var(--grigio);}
+
+/* ============ COME FUNZIONA ============ */
+.passi{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(26px,3.4vw,40px);}
+@media (min-width:820px){ .passi{grid-template-columns:repeat(3,minmax(0,1fr));} }
+/* rombo, numero e titolo stanno su UNA riga sola: prima erano tre righe
+   sovrapposte e il passo cominciava tre volte. Il rombo e' il ::before della
+   riga, non del passo, se no resta appeso sopra.
+   align-items:baseline mette numero e titolo sulla stessa riga di scrittura
+   anche se hanno misure diverse; il rombo non ha scrittura, quindi si centra
+   da solo con align-self. */
+.passo{position:relative;}
+.passo-titolo{display:flex;align-items:flex-start;gap:12px;position:relative;padding-left:20px;}
+/* il rombo NON sta nel flusso: dentro alla riga si centrerebbe su TUTTO il
+   titolo, e con un titolo di due righe finirebbe a meta' fra le due. Cosi'
+   invece e' agganciato alla meta' della PRIMA riga (misura del carattere per
+   l'interlinea 1.02, diviso due) e ci resta comunque vada a capo. */
+.passo-titolo::before{
+  content:'';position:absolute;left:0;
+  top:calc(clamp(20px,2.2vw,26px) * .51);
+  width:8px;height:8px;background:var(--oro);
+  transform:translateY(-50%) rotate(45deg);
+}
+.passo .n{font-family:var(--sigla);font-weight:700;font-size:14px;color:var(--oro-chiaro);letter-spacing:.16em;flex:none;
+  line-height:calc(clamp(20px,2.2vw,26px) * 1.02);}
+.passo h3{font-size:clamp(20px,2.2vw,26px);min-width:0;}
+.passo p{margin-top:16px;font-size:15.5px;color:var(--grigio);}
+
+/* ============ STRISCIA DI FOTO ============
+   Quattro foto da bordo a bordo, senza una parola sopra: sono lì per far
+   vedere l'ambiente, non per dire qualcosa. */
+.striscia{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:var(--nero);}
+@media (min-width:760px){ .striscia{grid-template-columns:repeat(4,minmax(0,1fr));} }
+.striscia div{aspect-ratio:1/1;overflow:hidden;}
+.striscia img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--easing);}
+.striscia div:hover img{transform:scale(1.06);}
+
+/* ============ SUL TELEFONO I DUE BLOCCHI LUNGHI SCORRONO ============
+   Quattro quadrati impilati e cinque schede prima/dopo una sotto l'altra
+   facevano quattro schermate. Su telefono diventano due nastri che si
+   scorrono col dito; sul computer restano griglie, dove la vista d'insieme
+   e' meta' dell'argomento. */
+@media (max-width:759px){
+  .striscia{
+    display:flex;gap:2px;overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    /* scroll-padding: se no la prima foto si incolla al bordo dello
+       scrollport e il nastro si apre gia' scorso (regola 94) */
+    scroll-padding-left:0;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+  }
+  .striscia::-webkit-scrollbar{display:none;}
+  .striscia div{flex:0 0 74%;scroll-snap-align:start;}
+
+  .pd-griglia{
+    display:flex;gap:12px;overflow-x:auto;
+    scroll-snap-type:x mandatory;padding-bottom:6px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+  }
+  .pd-griglia::-webkit-scrollbar{display:none;}
+  .pd-card{flex:0 0 84%;scroll-snap-align:center;}
+  /* dice quante sono: chi scorre una scheda deve sapere che non e' l'unica */
+  .scorri-nota{display:flex;align-items:center;gap:9px;margin:0 0 14px;
+    font-family:var(--sigla);font-size:10.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--oro-chiaro);font-weight:700;}
+  .scorri-nota::after{content:'';flex:1;height:1px;background:var(--bordo);}
+}
+@media (min-width:760px){ .scorri-nota{display:none;} }
+
+/* ---- il visualizzatore: si tocca una foto e si apre grande ---- */
+.lente{position:fixed;inset:0;z-index:9000;background:#07070b;   /* pieno: al 98% il logo e i tasti d'oro si intravedevano */
+  display:flex;align-items:center;justify-content:center;padding:16px;}
+.lente[hidden]{display:none;}
+.lente img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;}
+.lente-chiudi{position:absolute;top:10px;right:10px;
+  width:44px;height:44px;                 /* area da toccare (regola 30) */
+  display:flex;align-items:center;justify-content:center;
+  background:none;border:1px solid var(--bordo);color:var(--avorio);
+  font-size:22px;line-height:1;cursor:pointer;}
+.apribile{cursor:zoom-in;}
+
+
+/* ============ LE RISPOSTE ============ */
+.faq{border-top:1px solid var(--bordo);margin-top:clamp(30px,4vw,48px);}
+.faq details{border-bottom:1px solid var(--bordo);}
+.faq summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:flex-start;justify-content:space-between;gap:20px;
+  padding:24px 0;font-family:var(--display);text-transform:uppercase;
+  font-size:clamp(15px,1.8vw,21px);line-height:1.22;
+  transition:color .25s var(--easing);
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary:hover{color:var(--oro-chiaro);}
+.faq summary::after{
+  content:'+';font-family:var(--sigla);font-weight:700;font-size:24px;line-height:1;
+  color:var(--oro);flex:none;transition:transform .3s var(--easing);
+}
+.faq details[open] summary::after{transform:rotate(45deg);}
+.faq .risposta{padding:0 0 26px;font-size:16px;color:var(--grigio);max-width:62ch;}
+
+/* ============ RICHIAMO FINALE ============ */
+.richiamo{background:var(--nero);border-top:1px solid var(--bordo);}
+.richiamo .wrap{
+  padding-top:clamp(30px,3.6vw,48px);padding-bottom:clamp(30px,3.6vw,48px);
+  display:grid;grid-template-columns:minmax(0,1fr);gap:32px;align-items:center;
+}
+@media (min-width:900px){ .richiamo .wrap{grid-template-columns:1.3fr .7fr;} }
+.richiamo h2{font-size:clamp(28px,4vw,50px);max-width:16ch;}
+.richiamo p{margin-top:18px;font-size:16.5px;color:var(--grigio);max-width:50ch;}
+.richiamo .azioni{display:flex;flex-direction:row;flex-wrap:wrap;gap:12px;justify-content:center;}
+/* i due tasti affiancati e centrati: uno sotto l'altro allungavano il blocco di
+   una fascia intera, e allineati a sinistra lasciavano un vuoto largo a destra.
+   Il richiamo e i contatti hanno gli stessi due tasti: stessa regola per tutti
+   e due, se no si toccano in due punti e uno resta indietro. */
+.richiamo .azioni .btn,
+.contatti-cta .btn{padding:15px 14px;font-size:10.5px;letter-spacing:.09em;white-space:nowrap;}
+@media (max-width:379px){ #trasformazioni .tit-sezione{font-size:26px;} }
+/* sotto i 380px (iPhone SE e Android piccoli) andavano a capo lo stesso */
+/* fra 380 e 409 px i due tasti andavano a capo: li' si stringono un filo.
+   Sopra i 410 ci stanno pieni, sotto i 380 questa regola vale lo stesso. */
+@media (max-width:409px){ .richiamo .azioni .btn,.contatti-cta .btn{padding:15px 11px;font-size:10px;letter-spacing:.06em;} }
+/* sul telefono i due tasti si spartiscono TUTTA la riga, come la barra fissa in
+   fondo: stretti al centro lasciavano due vuoti ai lati. Restano affiancati
+   perche' crescono in proporzione al testo che contengono, non a meta' esatta:
+   "scrivimi su whatsapp" e' piu' lungo e la meta' esatta lo spezzerebbe. */
+@media (max-width:759px){
+  .richiamo .azioni,.contatti-cta{flex-wrap:nowrap;}
+  .richiamo .azioni .btn,.contatti-cta .btn{flex:1 1 auto;justify-content:center;}
+}
+
+/* ============ CONTATTI ============ */
+.contatti-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(36px,5vw,68px);}
+/* DIFETTO TROVATO IL 19/08, LASCIATO COM'ERA APPOSTA — DA DECIDERE CON FABIO.
+   «1.minmax(0,1fr)» non e' una misura: il browser butta via tutta la riga,
+   e la sezione resta a UNA colonna larga 1152px a ogni schermo invece che a
+   due. Scritta giusta: grid-template-columns:minmax(0,1.1fr) .9fr;
+   Non l'ho corretta perche' correggendola il riquadro degli orari passa da
+   1152 a 490px, e la frase che Fabio ha chiesto su due righe ne prenderebbe
+   quattro. Inoltre il titolo «Prenota la consulenza gratuita», che ha
+   «consulenza gratuita» legato da --sistema, sfonda la colonna stretta. */
+@media (min-width:900px){ .contatti-grid{grid-template-columns:1.minmax(0,1fr) .9fr;align-items:start;} }
+.contatti-lista{list-style:none;margin:0;padding:0;}
+/* flex-wrap: su un telefono stretto etichetta e valore vanno uno sotto
+   l'altro invece di schiacciarsi o sfondare la riga */
+.contatti-lista li{
+  display:flex;justify-content:space-between;gap:6px 16px;flex-wrap:wrap;
+  padding:16px 0;border-bottom:1px solid var(--bordo);font-size:15.5px;
+}
+.contatti-lista li > *{min-width:0;}
+.contatti-lista li span:first-child{font-family:var(--sigla);font-weight:600;color:var(--grigio);font-size:11px;letter-spacing:.14em;text-transform:uppercase;}
+.contatti-lista li a{border-bottom:1px solid transparent;transition:border-color .25s;}
+.contatti-lista li a:hover{border-color:var(--oro);}
+.contatti-cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap;justify-content:center;}
+.riquadro{background:var(--antracite-3);border:1px solid var(--bordo);padding:clamp(26px,3vw,36px);}
+.riquadro h3{font-size:21px;}
+.riquadro p{margin-top:16px;font-size:15.5px;color:var(--grigio);}
+.riquadro .indirizzo{margin-top:18px;font-size:16.5px;color:var(--avorio);font-weight:600;}
+
+/* ============ PIEDE ============ */
+footer{background:var(--nero);color:rgba(245,242,236,.75);padding:38px 0 22px;}
+.footer-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;padding-bottom:34px;border-bottom:1px solid var(--bordo);}
+@media (min-width:760px){ .footer-grid{grid-template-columns:1.1fr 1.25fr minmax(0,1.05fr);} }
+/* il nome sta ACCANTO al logo, non sotto: due righe allineate al centro del
+   marchio. Sotto, in fila unica, allungava il piede senza dire niente di piu' */
+.footer-brand{display:flex;align-items:center;gap:20px;}
+.footer-logo{height:92px;width:auto;flex:0 0 auto;}
+.footer-nome strong{display:block;font-size:17px;color:var(--avorio);font-weight:600;letter-spacing:.01em;}
+.footer-brand small{display:block;margin-top:6px;font-family:var(--sigla);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--oro-chiaro);font-weight:600;}
+/* "Vai a": sei voci su due colonne */
+.footer-lista{display:grid;grid-template-columns:repeat(2,max-content);column-gap:46px;}
+/* l'ultima colonna va a filo del bordo destro, come la riga della P. IVA */
+@media (min-width:760px){ .footer-col:last-child{justify-self:end;} }
+.footer-col h4{font-family:var(--sigla);font-weight:700;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-chiaro);margin-bottom:16px;}
+/* display:flex + gap: le icone erano appiccicate alla parola (nessuno spazio
+   fra un <svg> e il testo che lo segue) */
+.footer-col a,.footer-col p{display:flex;align-items:center;gap:9px;font-size:14.5px;margin-bottom:10px;color:rgba(245,242,236,.7);}
+/* sul telefono "Vai a" e "Scrivimi" stanno affiancate: due colonne invece di
+   due blocchi in fila accorciano il piede di quasi una schermata */
+@media (max-width:759px){
+  .footer-grid{grid-template-columns:.82fr 1.18fr;gap:26px 16px;}  /* la mail e' lunga: alla sua colonna serve piu' spazio */
+  .footer-brand{grid-column:1 / -1;}
+  .footer-col a,.footer-col p{font-size:12px;margin-bottom:8px;align-items:flex-start;overflow-wrap:anywhere;}
+  .footer-col .ico{margin-top:1px;}
+  /* sul telefono la colonna e' gia' stretta: le sei voci restano in fila */
+  .footer-lista{grid-template-columns:minmax(0,1fr);}
+  .footer-brand{gap:14px;}
+  .footer-logo{height:76px;}
+}
+.footer-col a:hover{color:var(--avorio);}
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:22px;font-size:12px;color:rgba(245,242,236,.5);}
+
+/* ============ BARRA FISSA (solo telefono) ============
+   env(safe-area-inset-bottom): sotto la barra degli iPhone con la tacca
+   ci finirebbe mezzo pulsante. */
+.barra-mobile{display:none;}
+@media (max-width:1000px){
+  .barra-mobile{
+    display:flex;position:fixed;left:0;right:0;bottom:0;z-index:200;
+    background:var(--nero);gap:10px;border-top:1px solid var(--bordo);
+    padding:8px 14px;padding-bottom:max(8px, env(safe-area-inset-bottom));
+    box-shadow:0 -10px 30px rgba(0,0,0,.5);
+  }
+  .barra-mobile .btn{flex:1;padding:13px 8px;font-size:10.5px;letter-spacing:.1em;}
+  body{padding-bottom:calc(66px + env(safe-area-inset-bottom));}
+}
+
+/* ============ AVVISO MOMENTANEO ============ */
+.toast{
+  position:fixed;left:50%;bottom:84px;transform:translate(-50%,20px);
+  background:var(--avorio);color:var(--nero);
+  padding:14px 22px;font-size:13px;font-weight:600;
+  box-shadow:0 16px 40px rgba(0,0,0,.5);
+  z-index:400;opacity:0;pointer-events:none;
+  transition:opacity .35s var(--easing),transform .35s var(--easing);
+}
+.toast.mostra{opacity:1;transform:translate(-50%,0);}
+@media (min-width:1001px){ .toast{bottom:28px;} }
+
+::selection{background:var(--oro);color:var(--nero);}
+</style>
+
+<!-- Dati per Google: nome, cosa fa, dove, contatti. Devono dire le stesse
+     cose che si leggono in pagina, altrimenti Google li penalizza.
+     Gli orari sono quelli che Lorenzo ha dato il 16/08: sono le ore in cui
+     è in sala, e in pagina è scritto che si va comunque su appuntamento. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "LG Coaching",
+  "description": "Lorenzo Gubertini, personal trainer certificato: programmi di allenamento su misura, coaching online 1:1 e allenamenti in presenza a Buccinasco.",
+  "url": "https://lgcoaching.it/",
+  "image": "https://lgcoaching.it/img/og.jpg?v=2",
+  "telephone": "+393313346610",
+  "email": "lgcoachinginfo@gmail.com",
+  "priceRange": "€€",
+  "areaServed": "IT",
+  "vatID": "IT14495050966",
+  "sameAs": ["https://www.instagram.com/lorenzo_gubertini"],
+  "founder": {
+    "@type": "Person",
+    "name": "Lorenzo Gubertini",
+    "jobTitle": "Personal trainer"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Andrea Mantegna 1",
+    "addressLocality": "Buccinasco",
+    "postalCode": "20090",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ]
+}
+</script>
+<!-- domande-e-risposte-per-le-macchine -->
+<!-- Generato da fai-faq.py dal testo vero della pagina: NON si tocca
+     a mano. Se cambi una domanda o una risposta la' sotto, rilancia
+     lo script, se no quello che dichiari a Google non e' piu' quello
+     che si legge — e per Google e' una violazione. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto costa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il programma personalizzato parte da 40 €, una tantum. Il coaching 1:1 parte da 80 € al mese, e nei pacchetti da 3 e 6 mesi il mese costa meno. La prima consulenza è gratuita: prima capiamo insieme cosa ti serve, poi si parla di soldi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come mi arriva il programma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In PDF scaricabile. Te lo tieni sul telefono e ce l'hai sempre dietro in palestra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto dura un programma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sei-otto settimane: è la durata su cui lo costruisco."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cosa ti serve per prepararmelo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le foto del fisico, peso, età e altezza, il tuo obiettivo, da quanto ti alleni, eventuali infortuni o problemi fisici, quanti giorni hai a settimana e con che attrezzatura ti alleni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso allenarmi con te di persona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì, alla FitActive di Buccinasco, in via Andrea Mantegna 1: è la palestra dove alleno. Sono in sala dal lunedì al venerdì dalle 7 alle 18 e il sabato dalle 9 alle 13, sempre su appuntamento: durante una lezione resto con il cliente, quindi l'orario si concorda prima."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sono principiante, va bene lo stesso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. Seguo soprattutto principianti e intermedi, e il programma si costruisce sul livello in cui sei adesso, non su quello di qualcun altro."
+      }
+    }
+  ]
+}
+</script>
+<!-- fine-domande-e-risposte-per-le-macchine -->
+</head>
+<body>
+<!-- Icone dei pulsanti. Un solo blocco, richiamato con <use>: cosi' il&nbsp;disegno sta&nbsp;scritto una&nbsp;volta sola. La&nbsp;misura e'&nbsp;nella classe .ico&nbsp;(regola 75:&nbsp;un
+     <svg> senza width/height vale 300x150 e sfonda il pulsante). -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.2 4.79 1.2 5.46 0 9.91-4.44 9.91-9.9 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24zm4.52 9.83c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.78.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.04.4 1.4.52.59.18 1.12.16 1.54.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><path fill="currentColor" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-3.1a1.35 1.35 0 1 1 0 2.7 1.35 1.35 0 0 1 0-2.7z"/></symbol>
+  <symbol id="i-agenda" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+  <symbol id="i-giu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v14M6 12l6 6 6-6"/></symbol>
+  <symbol id="i-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3l1.5 4.5-2 1.5a13 13 0 0 0 6 6l1.5-2 4.5 1.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+  <symbol id="i-listino" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h10"/><circle cx="18.5" cy="19" r="2"/></symbol>
+</defs></svg>
+
+
+<!-- ============ TESTATA ============ -->
+<header class="site-header" id="siteHeader">
+  <a href="#top" class="brand">
+    <img class="brand-logo" src="img/logo.png" alt="Il monogramma LG del logo di LG Coaching" width="215" height="260">
+    <span class="brand-nome">LG Coaching
+      <small>Lorenzo Gubertini</small>
+    </span>
+  </a>
+  <nav class="nav-desktop">
+    <a href="#chi">Chi sono</a>
+    <a href="#percorsi">I percorsi</a>
+    <a href="#prezzi">Prezzi</a>
+    <a href="#trasformazioni">Risultati</a>
+    <a href="#risposte">Risposte</a>
+    <a href="#contatti" class="btn-nav"><svg class="ico" aria-hidden="true"><use href="#i-wa"></use></svg>Consulenza gratuita</a>
+  </nav>
+  <!-- Sul telefono la barra in alto aveva solo il marchio: questi due tasti
+       portano dove la gente va davvero a guardare (prezzi e risposte). -->
+  <nav class="nav-mobile">
+    <a href="#prezzi">Prezzi</a>
+    <a href="#risposte">FAQ</a>
+    <button class="menu-tasto" type="button" id="menuTasto"
+            aria-label="Apri il menu" aria-expanded="false" aria-controls="menuPieno">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <!-- il menu del telefono: le sezioni che NON stanno gia' nei due tasti -->
+  <nav class="menu-pieno" id="menuPieno" hidden>
+    <a href="#chi">Chi sono</a>
+    <a href="#percorsi">I percorsi</a>
+    <a href="#trasformazioni">Risultati</a>
+    <a href="#come">Come funziona</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+</header>
+
+<!-- ============ APERTURA ============
+     Foto dello shooting nuovo, arrivate il 20/08: file veri da 3024x4032 e
+     4284x5712, non piu' screenshot. L'apertura pero' e' rimasta quella di
+     schiena del giro vecchio, scelta da Fabio: e' anche la foto da cui nasce
+     l'anteprima di WhatsApp. Ognuna e' gia' ritagliata nel rapporto del
+     suo riquadro, cosi' il browser non ingrandisce niente.
+     I tagli si rifanno con  insegna-documenti/lg-coaching/_nuovi_tagli.py:
+     li' dentro c'e' scritto, per ognuna, a che altezza deve stare la testa e
+     perche'. L'unica foto rimasta del giro vecchio e' quella del percorso «in
+     presenza»: deve essere la FitActive, perche' la nomina il testo accanto. -->
+<section class="hero" id="top">
+  <div class="hero-testo">
+    <span class="label">Online e in presenza</span>
+    <h1>La <em>migliore</em> versione <span class="capo">del&nbsp;<em>tuo&nbsp;fisico</em></span></h1>
+    <p class="hero-frase">Programmi di&nbsp;allenamento costruiti sul&nbsp;tuo&nbsp;corpo,&nbsp;uno&nbsp;per&nbsp;uno. <br>Online da&nbsp;qualsiasi parte d'Italia, o&nbsp;dal&nbsp;vivo insieme&nbsp;a&nbsp;me&nbsp;in&nbsp;palestra.</p>
+    <div class="hero-azioni">
+      <a href="#contatti" class="btn btn-oro"><svg class="ico" aria-hidden="true"><use href="#i-agenda"></use></svg>Prenota la&nbsp;consulenza&nbsp;gratuita</a>
+      <a href="#percorsi" class="btn btn-vuoto"><svg class="ico" aria-hidden="true"><use href="#i-giu"></use></svg>Guarda i percorsi</a>
+    </div>
+  </div>
+  <div class="hero-foto">
+    <img src="img/hero-foto.jpg?v=21ago" alt="Lorenzo Gubertini di spalle in una sala pesi in penombra, il suo riflesso nello specchio in fondo" width="1600" height="2000" loading="eager" fetchpriority="high">
+    <span class="label--su-foto">Personal trainer&nbsp;certificato</span>
+  </div>
+</section>
+
+<!-- ============ I NUMERI ============
+     Le prove arrivano prima dei discorsi. Sono tutti dati suoi, presi dal
+     questionario: niente numeri gonfiati. -->
+<div class="numeri">
+  <div class="numero"><div class="n">4</div><div class="t">Anni in sala pesi</div></div>
+  <div class="numero"><div class="n">150+</div><div class="t">Persone seguite</div></div>
+  <div class="numero"><div class="n">EQF 4</div><div class="t">Certificazione europea</div></div>
+  <div class="numero"><div class="n">0 &euro;</div><div class="t">La prima consulenza</div></div>
+</div>
+
+<!-- ============ CHI SONO ============ -->
+<section class="fascia" id="chi">
+  <div class="wrap">
+    <div class="narrativa rv">
+      <div class="narrativa-foto">
+        <img src="img/lorenzo.jpg?v=21ago" alt="Lorenzo Gubertini in canotta nera, le braccia incrociate, nella sala pesi in penombra" width="1300" height="1625" loading="lazy">
+      </div>
+      <div class="narrativa-testo">
+        <span class="label">Chi sono</span>
+        <h2>Lorenzo Gubertini</h2>
+        <!-- Testo riscritto da Lorenzo stesso (PDF «Scritte sito web», 16/08). -->
+        <p>4&nbsp;anni in&nbsp;sala pesi e&nbsp;oltre 150&nbsp;persone portate verso i&nbsp;risultati che&nbsp;desideravano. Fra&nbsp;percorsi di&nbsp;ipertrofia, ricomposizione corporea&nbsp;o&nbsp;dimagrimento.</p>
+        <p>Come? Studiando e&nbsp;seguendo anatomia e&nbsp;funzioni del&nbsp;corpo&nbsp;umano.</p>
+        <div class="titoli">
+          <span>Personal trainer&nbsp;certificato</span>
+          <span>Diploma Nazionale&nbsp;EPS&nbsp;CONI</span>
+          <span>Certificazione europea&nbsp;EQF&nbsp;4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LA FRASE ============
+     Sono parole sue, dal questionario. Qui l'oro si può usare: il fondo è
+     pieno, non è una foto. -->
+<section class="fascia-frase">
+  <div class="wrap">
+    <span class="label">Il mio perché</span>
+    <!-- Parole di Lorenzo, dal questionario. Tolta solo «Perché per arrivare
+         sopra il cielo devi puntare alle stelle. E qua mi ritrovo,»: era una
+         frase da reel motivazionale e non aggiungeva niente.
+         Togliendola il resto restava senza soggetto, quindi «con l'obiettivo
+         di» è diventato «l'obiettivo è». Nient'altro è stato toccato. -->
+    <blockquote>Non&nbsp;mi&nbsp;iscrissi in&nbsp;palestra&nbsp;per <em>migliorare</em>. Mi iscrissi per <em>diventare il migliore</em>.</blockquote>
+    <p class="dopo">Dopo anni di&nbsp;allenamento e&nbsp;studio, l'obiettivo è&nbsp;farti migliorare senza passare per&nbsp;gli&nbsp;errori di&nbsp;percorso da&nbsp;cui&nbsp;son&nbsp;passato&nbsp;io.</p>
+  </div>
+</section>
+
+<!-- ============ I PERCORSI ============ -->
+<section id="percorsi">
+  <div class="wrap" style="padding-top:clamp(32px,4vw,52px);padding-bottom:clamp(20px,2.6vw,32px);">
+    <div class="rv">
+      <span class="label">I percorsi</span>
+      <h2 class="tit-sezione" style="max-width:19ch;"><em>Scegli</em> come vuoi essere <em>seguito</em></h2>
+      <p class="sotto-sezione">Dal&nbsp;programma che&nbsp;ti&nbsp;costruisco su&nbsp;misura al&nbsp;percorso in&nbsp;cui&nbsp;ti&nbsp;seguo settimana per&nbsp;settimana. La&nbsp;prima consulenza è&nbsp;gratuita: ci&nbsp;sentiamo e&nbsp;capiamo insieme da&nbsp;dove&nbsp;partire.</p>
+    </div>
+  </div>
+
+  <div class="riga rv">
+    <div class="riga-foto">
+      <img class="su" src="img/percorso-scheda.jpg?v=21ago" alt="Lorenzo Gubertini in posa davanti alla rastrelliera dei dischi, alla FitActive" width="1206" height="804" loading="lazy">
+    </div>
+    <div class="riga-info">
+      <div class="riga-numero">01</div>
+      <h3>Programma personalizzato</h3>
+      <p class="desc">Il&nbsp;programma di&nbsp;allenamento modellato su&nbsp;di&nbsp;te:&nbsp;obiettivo,&nbsp;livello, <br>giorni che&nbsp;hai&nbsp;a&nbsp;disposizione e&nbsp;attrezzatura&nbsp;con&nbsp;cui&nbsp;ti&nbsp;alleni. <br>Te&nbsp;lo&nbsp;mando in&nbsp;PDF,&nbsp;pronto da&nbsp;portare&nbsp;in&nbsp;palestra.</p>
+      <ul class="riga-elenco">
+        <li>Programma su&nbsp;misura: il&nbsp;tuo,&nbsp;e&nbsp;di&nbsp;nessun&nbsp;altro</li>
+        <li>Consegna&nbsp;in&nbsp;PDF&nbsp;scaricabile</li>
+        <li>Vuoi anche i&nbsp;check e&nbsp;le&nbsp;videochiamate? Sono nel&nbsp;coaching&nbsp;1:1</li>
+      </ul>
+      <a href="#prezzi" class="riga-cta"><svg class="ico" aria-hidden="true"><use href="#i-listino"></use></svg>Vedi i prezzi</a>
+    </div>
+  </div>
+
+  <div class="riga inversa rv">
+    <div class="riga-foto">
+      <!-- MODIFICA QUI: quando Lorenzo manda una foto sua CON un cliente, va
+           qui: il coaching e' un rapporto fra due persone e si vede meglio. -->
+      <img class="su" src="img/percorso-coaching.jpg?v=21ago" alt="Lorenzo Gubertini in posa, le braccia dietro la testa, alla FitActive" width="1206" height="804" loading="lazy">
+    </div>
+    <div class="riga-info">
+      <div class="riga-numero">02</div>
+      <h3>Coaching online 1:1</h3>
+      <p class="desc">Il&nbsp;percorso completo: ci&nbsp;sentiamo, sistemo&nbsp;io&nbsp;il&nbsp;programma <br>durante il&nbsp;percorso e&nbsp;ho&nbsp;sotto controllo come stai&nbsp;procedendo. <br>Tu&nbsp;pensi solo a&nbsp;camminare verso&nbsp;il&nbsp;tuo&nbsp;obiettivo.</p>
+      <ul class="riga-elenco">
+        <li>Programma di&nbsp;allenamento aggiornato&nbsp;nel&nbsp;tempo</li>
+        <li>Check settimanali con&nbsp;foto&nbsp;e&nbsp;dati</li>
+        <li>Videochiamate</li>
+        <li>Chat WhatsApp diretta&nbsp;con&nbsp;me</li>
+      </ul>
+      <a href="#contatti" class="riga-cta"><svg class="ico" aria-hidden="true"><use href="#i-agenda"></use></svg>Prenota la consulenza</a>
+    </div>
+  </div>
+
+  <div class="riga intera rv">
+    <div class="riga-foto">
+      <!-- Qui la foto DEVE essere la FitActive (la sala arancione): la riga
+           qui sotto nomina quella palestra, e la foto deve dire la stessa
+           cosa del testo che le sta accanto (regola 16). -->
+      <img class="giu" src="img/percorso-presenza.jpg?v=21ago" alt="La sala della FitActive di Buccinasco durante un allenamento" width="1206" height="1418" loading="lazy">
+    </div>
+    <div class="riga-info">
+      <div class="riga-numero">03</div>
+      <h3>Allenamenti in presenza</h3>
+      <p class="desc">Ci&nbsp;alleniamo insieme,&nbsp;in&nbsp;sala. <br>Ti&nbsp;correggo l'esecuzione mentre&nbsp;la&nbsp;fai: <br>è&nbsp;la&nbsp;differenza fra&nbsp;fare un&nbsp;esercizio e&nbsp;farlo&nbsp;bene.</p>
+      <ul class="riga-elenco">
+        <li>Alla FitActive di&nbsp;Buccinasco, in&nbsp;via&nbsp;Andrea Mantegna 1, dove alleno&nbsp;io</li>
+        <li>Su appuntamento</li>
+      </ul>
+      <a href="#contatti" class="riga-cta"><svg class="ico" aria-hidden="true"><use href="#i-agenda"></use></svg>Fissa un allenamento</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREZZI ============ -->
+<section class="fascia fascia-2" id="prezzi">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:clamp(34px,4.5vw,52px);">
+      <span class="label">Prezzi</span>
+      <h2 class="tit-sezione" style="max-width:19ch;"><em>Scegli</em> il&nbsp;percorso migliore&nbsp;per <em>te</em></h2>
+    </div>
+    <div class="prezzi rv">
+
+      <!-- Nomi, livelli, cifre e contenuti sono quelli scritti da Lorenzo
+           nel PDF «Scritte sito web» del 16/08: non sono stati interpretati. -->
+      <div class="card">
+        <div class="etichetta">Per neofita-intermedio</div>
+        <h3>Programma Entry&nbsp;level</h3>
+        <div class="cifra">40 &euro;<small>una tantum</small></div>
+        <ul>
+          <li>2 o&nbsp;3 allenamenti&nbsp;a&nbsp;settimana</li>
+          <li>Programma specifico e&nbsp;flessibile, costruito sui&nbsp;tuoi tempi, sull'attrezzatura che&nbsp;hai&nbsp;e&nbsp;sul&nbsp;tuo bagaglio&nbsp;motorio</li>
+          <li>Consegna&nbsp;in&nbsp;PDF&nbsp;scaricabile</li>
+        </ul>
+        <a href="#contatti" class="btn btn-vuoto"><svg class="ico" aria-hidden="true"><use href="#i-pdf"></use></svg>Richiedi il programma</a>
+      </div>
+
+      <div class="card spicca">
+        <div class="etichetta">Per intermedio-avanzato</div>
+        <h3>Programma Advanced</h3>
+        <div class="cifra">49 &euro;<small>una tantum</small></div>
+        <ul>
+          <li>3 o&nbsp;più&nbsp;allenamenti&nbsp;a&nbsp;settimana</li>
+          <li>Volume calibrato ad&nbsp;hoc,&nbsp;per&nbsp;gli&nbsp;atleti che&nbsp;vogliono ottenere il&nbsp;massimo dalle loro&nbsp;prestazioni</li>
+          <li>Consegna&nbsp;in&nbsp;PDF&nbsp;scaricabile</li>
+        </ul>
+        <a href="#contatti" class="btn"><svg class="ico" aria-hidden="true"><use href="#i-pdf"></use></svg>Richiedi il programma</a>
+      </div>
+
+      <div class="card">
+        <div class="etichetta">Il percorso completo</div>
+        <h3>Coaching 1:1</h3>
+        <div class="cifra">80 &euro;<small>al mese</small></div>
+        <div class="listino">3&nbsp;mesi 210&nbsp;&euro; &middot; 6&nbsp;mesi&nbsp;300&nbsp;&euro;</div>
+        <ul>
+          <li>Programma aggiornato&nbsp;nel&nbsp;tempo</li>
+          <li>Check ogni due&nbsp;settimane, con&nbsp;video&nbsp;e&nbsp;peso</li>
+          <li>Videochiamate e&nbsp;chat&nbsp;diretta</li>
+          <li>Un&nbsp;allenamento live 1:1 al&nbsp;mese a&nbsp;prezzo&nbsp;agevolato</li>
+        </ul>
+        <a href="#contatti" class="btn btn-vuoto"><svg class="ico" aria-hidden="true"><use href="#i-agenda"></use></svg>Prenota la consulenza</a>
+      </div>
+
+    </div>
+    <p class="nota-prezzi">Gli&nbsp;allenamenti in&nbsp;presenza alla FitActive di&nbsp;Buccinasco si&nbsp;concordano direttamente: scrivimi e&nbsp;ci&nbsp;mettiamo&nbsp;d'accordo.</p>
+  </div>
+</section>
+
+<!-- ============ TRASFORMAZIONI ============
+     Foto vere. Il 17/08 Lorenzo le ha divise lui in cartelle, una per
+     persona, con dentro il NOME e i MESI di percorso: quindi nomi e tempi
+     sono suoi, non dedotti. Le tre coppie che avevo proposto io il 16/08
+     (Gabriele, Michele, Daniel) erano giuste.
+
+     Quale foto va nel "prima" e quale nel "dopo" resta una scelta, e il
+     criterio e' uno solo: LA STESSA POSA nelle due.
+       Daniel   09 -> 10, e non la 11: li' e' in tensione, mentre la 09 e'
+                rilassata. Un paragone fra una posa rilassata e una tirata
+                gonfia il risultato.
+       Giorgio  16 -> 18, fronte con fronte. Le 17 e 19 sono di schiena, ma
+                la 19 e' a doppio bicipite: con la 17 rilassata non regge.
+       Daniele  21 -> 20, vestito in tutte e due: e' un dimagrimento, e si
+                vede lo stesso.
+
+     RESTANO FUORI, e il motivo va detto a Lorenzo:
+       Joseph    la foto "dopo" e' presa da lontano — il corpo e' largo 205
+                 px contro i 663 del "prima". Per affiancarle andrebbe
+                 ingrandita quattro volte. Serve un "dopo" ravvicinato.
+       Eleonora  vestita in tutte e due, e non si capisce quale sia la
+                 prima: sono screenshot, la data dello scatto non c'e'.
+                 Basta che lo dica lui.
+
+     I VOLTI SONO TAGLIATI FUORI apposta, come vuole Fabio. Il taglio parte
+     sotto il mento ed e' in scala col viso: cosi' il prima e il dopo restano
+     alla stessa distanza e si confrontano davvero, anche quando le due foto
+     sono scattate da lontananze diverse. Si rifa' tutto con
+     insegna-documenti/lg-coaching/rifai-le-foto.py. -->
+<section class="fascia" id="trasformazioni">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:clamp(34px,4.5vw,52px);">
+      <span class="label">Risultati</span>
+      <!-- «Le» legato a «trasformazioni»: da solo su una riga faceva tre righe
+           invece di due. Il max-width e' quello che serve per far stare
+           «Le trasformazioni» su una riga sola, misurato a 1440 e a 390. -->
+      <h2 class="tit-sezione" style="max-width:20ch;">Le <em>trasformazioni</em> di chi ho seguito</h2>
+    </div>
+    <p class="scorri-nota">Cinque percorsi &mdash; scorri</p>
+    <div class="pd-griglia rv">
+
+      <div class="pd-card">
+        <div class="pd-coppia">
+          <div class="pd-lato">
+            <img src="img/pd/michele-prima.jpg" alt="Michele all'inizio del percorso, di fronte, senza il volto" width="639" height="852" loading="lazy">
+            <span>Prima</span>
+          </div>
+          <div class="pd-lato">
+            <img src="img/pd/michele-dopo.jpg" alt="Michele dopo 2 mesi, nella stessa posa e alla stessa distanza" width="541" height="722" loading="lazy">
+            <span>Dopo</span>
+          </div>
+        </div>
+        <p class="pd-dida"><b>Michele</b> &mdash; 2&nbsp;mesi</p>
+      </div>
+
+      <div class="pd-card">
+        <div class="pd-coppia">
+          <div class="pd-lato">
+            <img src="img/pd/gabriele-prima.jpg" alt="Gabriele all'inizio del percorso, di fronte, senza il volto" width="700" height="933" loading="lazy">
+            <span>Prima</span>
+          </div>
+          <div class="pd-lato">
+            <img src="img/pd/gabriele-dopo.jpg" alt="Gabriele dopo 6 mesi, nella stessa posa e alla stessa distanza" width="580" height="774" loading="lazy">
+            <span>Dopo</span>
+          </div>
+        </div>
+        <p class="pd-dida"><b>Gabriele</b> &mdash; 6&nbsp;mesi</p>
+      </div>
+
+      <div class="pd-card">
+        <div class="pd-coppia">
+          <div class="pd-lato">
+            <img src="img/pd/daniel-prima.jpg" alt="Daniel all'inizio del percorso, di fronte, senza il volto" width="700" height="934" loading="lazy">
+            <span>Prima</span>
+          </div>
+          <div class="pd-lato">
+            <img src="img/pd/daniel-dopo.jpg" alt="Daniel dopo 4 mesi, nella stessa posa e alla stessa distanza" width="451" height="602" loading="lazy">
+            <span>Dopo</span>
+          </div>
+        </div>
+        <p class="pd-dida"><b>Daniel</b> &mdash; 4&nbsp;mesi</p>
+      </div>
+
+      <div class="pd-card">
+        <div class="pd-coppia">
+          <div class="pd-lato">
+            <img src="img/pd/giorgio-prima.jpg" alt="Giorgio all'inizio del percorso, di fronte, senza il volto" width="700" height="934" loading="lazy">
+            <span>Prima</span>
+          </div>
+          <div class="pd-lato">
+            <img src="img/pd/giorgio-dopo.jpg" alt="Giorgio dopo 4 mesi, nella stessa posa e alla stessa distanza" width="588" height="785" loading="lazy">
+            <span>Dopo</span>
+          </div>
+        </div>
+        <p class="pd-dida"><b>Giorgio</b> &mdash; 4&nbsp;mesi</p>
+      </div>
+
+      <div class="pd-card">
+        <div class="pd-coppia">
+          <div class="pd-lato">
+            <img src="img/pd/daniele-prima.jpg" alt="Daniele all'inizio del percorso, seduto, senza il volto" width="700" height="934" loading="lazy">
+            <span>Prima</span>
+          </div>
+          <div class="pd-lato">
+            <img src="img/pd/daniele-dopo.jpg" alt="Daniele dopo 10 mesi, in piedi in palestra" width="700" height="933" loading="lazy">
+            <span>Dopo</span>
+          </div>
+        </div>
+        <p class="pd-dida"><b>Daniele</b> &mdash; 10&nbsp;mesi</p>
+      </div>
+    </div>
+    <!-- MODIFICA QUI: questa riga l'ho scritta io, non e' una frase di
+         Lorenzo. Dice la verita' su come sono fatte le foto, ma va letta e
+         approvata da lui prima di andare online sul suo dominio. -->
+    <p class="nota-pd">Sono le&nbsp;foto di&nbsp;controllo che&nbsp;mi&nbsp;mandano durante il&nbsp;percorso. Le&nbsp;pubblico senza volto, per&nbsp;rispetto&nbsp;di&nbsp;chi&nbsp;me&nbsp;le&nbsp;manda.</p>
+  </div>
+</section>
+
+<!-- ============ COME FUNZIONA ============
+     I tre passi sono quelli che Lorenzo ha descritto nel questionario:
+     cosa vuole ricevere e come consegna. -->
+<section class="fascia fascia-2" id="come">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:clamp(38px,5vw,60px);">
+      <span class="label">Come funziona</span>
+      <h2 class="tit-sezione" style="max-width:21ch;">Dal <em>primo</em> messaggio al <em>programma</em></h2>
+    </div>
+    <div class="passi rv">
+      <div class="passo">
+        <div class="passo-titolo">
+          <span class="n">01</span>
+          <h3>Ci sentiamo</h3>
+        </div>
+        <p>Mi&nbsp;scrivi in&nbsp;direct su&nbsp;Instagram o&nbsp;su&nbsp;WhatsApp e&nbsp;fissiamo la&nbsp;prima consulenza. È&nbsp;gratuita: serve a&nbsp;capire dove sei&nbsp;e&nbsp;dove vuoi&nbsp;arrivare.</p>
+      </div>
+      <div class="passo">
+        <div class="passo-titolo">
+          <span class="n">02</span>
+          <h3>Mi mandi i tuoi dati</h3>
+        </div>
+        <p>Foto del&nbsp;fisico, peso, età&nbsp;e&nbsp;altezza, obiettivo, da&nbsp;quanto ti&nbsp;alleni, infortuni o&nbsp;problemi fisici, quanti giorni hai&nbsp;a&nbsp;settimana e&nbsp;con&nbsp;che&nbsp;attrezzatura&nbsp;ti&nbsp;alleni.</p>
+      </div>
+      <div class="passo">
+        <div class="passo-titolo">
+          <span class="n">03</span>
+          <h3>Ricevi il programma</h3>
+        </div>
+        <p>Ti&nbsp;preparo il&nbsp;programma su&nbsp;misura e&nbsp;te&nbsp;lo&nbsp;mando in&nbsp;PDF,&nbsp;pronto da&nbsp;usare.&nbsp;Da&nbsp;lì&nbsp;si&nbsp;parte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Il richiamo sta QUI, fra «come funziona» e la striscia (Fabio, 21/08):
+     chi ha appena letto i tre passaggi e' il piu' pronto a scrivere, e a
+     fine pagina resta comunque la sezione contatti. -->
+<!-- ============ RICHIAMO FINALE ============ -->
+<div class="richiamo">
+  <div class="wrap">
+    <div>
+      <h2>Il&nbsp;primo passo&nbsp;&egrave; <em>gratis</em></h2>
+      <p>Ci&nbsp;sentiamo, mi&nbsp;racconti come ti&nbsp;alleni oggi e&nbsp;ti&nbsp;dico onestamente cosa cambierei. Poi&nbsp;decidi&nbsp;tu.</p>
+    </div>
+    <div class="azioni">
+      <a href="https://www.instagram.com/lorenzo_gubertini" target="_blank" rel="noopener" class="btn btn-vuoto"><svg class="ico" aria-hidden="true"><use href="#i-ig"></use></svg>Scrivimi su&nbsp;IG</a>
+      <a href="#" class="btn btn-oro js-wa"><svg class="ico" aria-hidden="true"><use href="#i-wa"></use></svg>Scrivimi su WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ STRISCIA DI FOTO ============
+     Quattro quadrati da bordo a bordo, senza una parola sopra. Sono le quattro
+     piu' nitide dello shooting (misurate: 12,7 / 13,6 / 3,9 / 10,7) e servono a
+     far vedere lui che si allena, non un posto: la palestra dove riceve e'
+     nominata piu' su, ed e' un'altra. -->
+<div class="striscia">
+  <div><img src="img/striscia/s1.jpg?v=21ago" alt="Lorenzo aggrappato alla macchina dei cavi, il busto in tensione" width="1000" height="1000" loading="lazy"></div>
+  <div><img src="img/striscia/s2.jpg?v=21ago" alt="Lorenzo di schiena, le mani sui fianchi" width="1000" height="1000" loading="lazy"></div>
+  <div><img src="img/striscia/s3.jpg?v=21ago" alt="Lorenzo in posa davanti all'insegna al neon della palestra" width="1000" height="1000" loading="lazy"></div>
+  <div><img src="img/striscia/s4.jpg?v=21ago" alt="Lorenzo di fronte, le braccia dietro la testa" width="1000" height="1000" loading="lazy"></div>
+</div>
+
+<!-- ============ LE RISPOSTE ============
+     Ogni risposta esce dalle risposte di Lorenzo al questionario: nessuna
+     è inventata. Se ne servono altre, vanno chieste a lui. -->
+<section class="fascia" id="risposte">
+  <div class="wrap">
+    <div class="rv">
+      <span class="label">FAQ</span>
+      <h2 class="tit-sezione" style="max-width:16ch;">Le <em>risposte</em> che cerchi</h2>
+    </div>
+    <div class="faq rv">
+      <details>
+        <summary>Quanto costa?</summary>
+        <p class="risposta">Il&nbsp;programma personalizzato parte da&nbsp;40&nbsp;&euro;, una&nbsp;tantum. Il&nbsp;coaching 1:1 parte da&nbsp;80&nbsp;&euro; al&nbsp;mese, e&nbsp;nei&nbsp;pacchetti da&nbsp;3 e&nbsp;6&nbsp;mesi il&nbsp;mese costa meno. La&nbsp;prima consulenza &egrave; gratuita: prima capiamo insieme cosa ti&nbsp;serve, poi&nbsp;si&nbsp;parla&nbsp;di&nbsp;soldi.</p>
+      </details>
+      <details>
+        <summary>Come mi&nbsp;arriva&nbsp;il&nbsp;programma?</summary>
+        <p class="risposta">In&nbsp;PDF&nbsp;scaricabile. Te&nbsp;lo&nbsp;tieni sul&nbsp;telefono e&nbsp;ce&nbsp;l'hai sempre dietro&nbsp;in&nbsp;palestra.</p>
+      </details>
+      <details>
+        <summary>Quanto dura&nbsp;un&nbsp;programma?</summary>
+        <p class="risposta">Sei-otto settimane: &egrave; la&nbsp;durata&nbsp;su&nbsp;cui&nbsp;lo&nbsp;costruisco.</p>
+      </details>
+      <details>
+        <summary>Cosa ti&nbsp;serve&nbsp;per&nbsp;prepararmelo?</summary>
+        <p class="risposta">Le&nbsp;foto del&nbsp;fisico, peso, et&agrave; e&nbsp;altezza, il&nbsp;tuo&nbsp;obiettivo, da&nbsp;quanto ti&nbsp;alleni, eventuali infortuni o&nbsp;problemi fisici, quanti giorni hai&nbsp;a&nbsp;settimana e&nbsp;con&nbsp;che&nbsp;attrezzatura&nbsp;ti&nbsp;alleni.</p>
+      </details>
+      <details>
+        <summary>Posso allenarmi&nbsp;con&nbsp;te&nbsp;di&nbsp;persona?</summary>
+        <p class="risposta">S&igrave;, alla FitActive di&nbsp;Buccinasco, in&nbsp;via&nbsp;Andrea Mantegna 1: &egrave; la&nbsp;palestra dove alleno. Sono in&nbsp;sala dal&nbsp;luned&igrave; al&nbsp;venerd&igrave; dalle&nbsp;7&nbsp;alle&nbsp;18 e&nbsp;il&nbsp;sabato dalle&nbsp;9&nbsp;alle&nbsp;13, sempre su&nbsp;appuntamento: durante una&nbsp;lezione resto con&nbsp;il&nbsp;cliente, quindi l'orario si&nbsp;concorda&nbsp;prima.</p>
+      </details>
+      <details>
+        <summary>Sono principiante, va&nbsp;bene&nbsp;lo&nbsp;stesso?</summary>
+        <p class="risposta">S&igrave;. Seguo soprattutto principianti e&nbsp;intermedi, e&nbsp;il&nbsp;programma si&nbsp;costruisce sul&nbsp;livello in&nbsp;cui&nbsp;sei&nbsp;adesso, non&nbsp;su&nbsp;quello di&nbsp;qualcun&nbsp;altro.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATTI ============
+     I contatti stanno scritti QUI e basta, più il blocco CFG in fondo alla
+     pagina e i dati per Google in testa. Se lo stesso numero comparisse in
+     un quarto punto, prima o poi si aggiorna uno e si dimentica l'altro. -->
+<section class="fascia fascia-2" id="contatti">
+  <div class="wrap">
+    <div class="contatti-grid">
+      <div class="rv">
+        <span class="label">Contatti</span>
+        <h2 class="tit-sezione" style="max-width:14ch;">Prenota la consulenza <em>gratuita</em></h2>
+        <p class="sotto-sezione" style="max-width:44ch;">Il&nbsp;modo pi&ugrave; veloce &egrave; un&nbsp;messaggio in&nbsp;direct su&nbsp;Instagram. Se&nbsp;preferisci, ci&nbsp;sono anche WhatsApp&nbsp;e&nbsp;la&nbsp;mail.</p>
+        <ul class="contatti-lista" style="margin-top:32px;">
+          <li><span>Instagram</span><a href="https://www.instagram.com/lorenzo_gubertini" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-ig"></use></svg>@lorenzo_gubertini</a></li>
+          <li><span>Telefono e WhatsApp</span><a href="#" class="js-tel"><svg class="ico" aria-hidden="true"><use href="#i-tel"></use></svg>+39 331 334 6610</a></li>
+          <li><span>Mail</span><a href="mailto:lgcoachinginfo@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"></use></svg>lgcoachinginfo@gmail.com</a></li>
+        </ul>
+        <div class="contatti-cta">
+          <a href="https://www.instagram.com/lorenzo_gubertini" target="_blank" rel="noopener" class="btn btn-vuoto"><svg class="ico" aria-hidden="true"><use href="#i-ig"></use></svg>Scrivimi su&nbsp;IG</a>
+          <a href="#" class="btn btn-oro js-wa"><svg class="ico" aria-hidden="true"><use href="#i-wa"></use></svg>Scrivimi su WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="riquadro rv">
+        <h3>Dove alleno dal vivo</h3>
+        <p>Gli&nbsp;allenamenti in&nbsp;presenza si&nbsp;fanno qui,&nbsp;su&nbsp;appuntamento: alleno dove sono&nbsp;io.</p>
+        <p class="indirizzo">FitActive Buccinasco<br>Via Andrea Mantegna 1</p>
+        <!-- Orari dati da Lorenzo il 16/08, parola per parola: in sala tutte le
+             mattine dal lunedì al sabato, all'occorrenza anche i pomeriggi;
+             lun-ven 7-18, sab 9-13, sempre su appuntamento. -->
+        <p>In&nbsp;sala dal&nbsp;luned&igrave; al&nbsp;venerd&igrave; dalle&nbsp;7&nbsp;alle&nbsp;18, il&nbsp;sabato dalle&nbsp;9&nbsp;alle&nbsp;13.<br>Sempre su&nbsp;appuntamento: durante una&nbsp;lezione resto con&nbsp;il&nbsp;cliente, quindi l'orario si&nbsp;concorda&nbsp;prima.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PIEDE ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="img/logo-completo.png" alt="Il logo di LG Coaching per esteso" width="300" height="420">
+        <div class="footer-nome">
+          <strong>Lorenzo Gubertini</strong>
+          <small>Personal trainer&nbsp;certificato</small>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Vai a</h4>
+        <!-- sei voci su due colonne: in fila indiana allungavano il piede di
+             mezza schermata e lasciavano un vuoto largo a destra -->
+        <div class="footer-lista">
+          <a href="#chi">Chi sono</a>
+          <a href="#percorsi">I percorsi</a>
+          <a href="#prezzi">Prezzi</a>
+          <a href="#trasformazioni">Risultati</a>
+          <a href="#risposte">Risposte</a>
+          <a href="#contatti">Contatti</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Scrivimi</h4>
+        <a href="https://www.instagram.com/lorenzo_gubertini" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-ig"></use></svg>Instagram</a>
+        <a href="mailto:lgcoachinginfo@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"></use></svg>lgcoachinginfo@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <!-- Partita IVA data da Lorenzo il 16/08. Il codice fiscale personale
+           non si pubblica mai. -->
+      <span>&copy; 2026 LG Coaching</span>
+      <span>Lorenzo Gubertini &middot;&nbsp;P.&nbsp;IVA&nbsp;14495050966</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ VISUALIZZATORE FOTO ============
+     Si apre toccando una foto della galleria o una prima/dopo. -->
+<div class="lente" id="lente" hidden>
+  <button class="lente-chiudi" type="button" aria-label="Chiudi la foto">&times;</button>
+  <img src="" alt="">
+</div>
+
+<!-- ============ BARRA FISSA (solo telefono) ============ -->
+<div class="barra-mobile">
+  <a href="https://www.instagram.com/lorenzo_gubertini" target="_blank" rel="noopener" class="btn btn-vuoto"><svg class="ico" aria-hidden="true"><use href="#i-ig"></use></svg>Direct</a>
+  <a href="#" class="btn btn-oro js-wa"><svg class="ico" aria-hidden="true"><use href="#i-wa"></use></svg>Consulenza gratuita</a>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+
+  /* ==================================================================
+     I DATI DI LORENZO STANNO SOLO QUI
+     Cambiando il numero in questo blocco cambia dappertutto: pulsanti,
+     barra del telefono, link di chiamata.
+     ================================================================== */
+  var CFG = {
+    whatsapp: "393313346610",
+    telefono: "+393313346610",
+    messaggio: "Ciao Lorenzo! Ti scrivo dal sito.\n\nVorrei prenotare la consulenza gratuita.\n\nNome: \nObiettivo: \nDa quanto ti alleni: "
+  };
+
+  var toastEl = document.getElementById('toast'), toastTimer = null;
+  function mostraToast(t){
+    toastEl.textContent = t;
+    toastEl.classList.add('mostra');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('mostra'); }, 2600);
+  }
+
+  /* WhatsApp con il messaggio già scritto: chi arriva non deve inventarsi
+     come iniziare, e Lorenzo riceve subito quello che gli serve sapere */
+  document.querySelectorAll('.js-wa').forEach(function(el){
+    if (CFG.whatsapp) {
+      /* api.whatsapp.com e NON wa.me: wa.me e' una pagina di rimbalzo e in
+         quel rimbalzo le emoji del messaggio si spezzano (regola 73) */
+      el.href = 'https://api.whatsapp.com/send?phone=' + CFG.whatsapp + '&text=' + encodeURIComponent(CFG.messaggio);
+      el.target = '_blank'; el.rel = 'noopener';
+    } else {
+      el.addEventListener('click', function(e){ e.preventDefault(); mostraToast('Dimostrazione · qui si apre WhatsApp'); });
+    }
+  });
+
+  document.querySelectorAll('.js-tel').forEach(function(el){
+    if (CFG.telefono) el.href = 'tel:' + CFG.telefono;
+    else el.addEventListener('click', function(e){ e.preventDefault(); mostraToast('Dimostrazione · qui parte la chiamata'); });
+  });
+
+  /* la testata prende il fondo pieno appena si scorre */
+  var header = document.getElementById('siteHeader');
+  function aggiornaHeader(){ header.classList.toggle('is-scrolled', window.scrollY > 60); }
+  aggiornaHeader();
+  window.addEventListener('scroll', aggiornaHeader, {passive:true});
+
+  /* comparsa allo scorrimento */
+  var elementiRv = document.querySelectorAll('.rv');
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+    elementiRv.forEach(function(el){ el.classList.add('rv-in'); });
+  } else {
+    var obs = new IntersectionObserver(function(voci){
+      voci.forEach(function(v){
+        if (v.isIntersecting) { v.target.classList.add('rv-in'); obs.unobserve(v.target); }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -60px 0px'});
+    elementiRv.forEach(function(el){ obs.observe(el); });
+  }
+
+  /* una domanda aperta alla volta: aprendone una si chiude quella prima */
+  var domande = document.querySelectorAll('.faq details');
+  domande.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if (!d.open) return;
+      domande.forEach(function(altra){ if (altra !== d) altra.open = false; });
+    });
+  });
+
+})();
+
+/* ---- apre le foto grandi. Guardie ovunque: se un pezzo non c'e', il resto
+   della pagina non si ferma (regola 83). ---- */
+(function(){
+  var lente = document.getElementById('lente');
+  if(!lente) return;
+  var dentro = lente.querySelector('img');
+  var chiudi = lente.querySelector('.lente-chiudi');
+  var tornaA = null;
+
+  function apri(img){
+    dentro.src = img.currentSrc || img.src;
+    dentro.alt = img.alt || '';
+    lente.hidden = false;
+    document.body.style.overflow = 'hidden';
+    tornaA = img;
+    chiudi.focus();
+  }
+  function via(){
+    lente.hidden = true;
+    dentro.src = '';
+    document.body.style.overflow = '';
+    if(tornaA) tornaA.focus && tornaA.focus();
+  }
+  document.querySelectorAll('.striscia img, .pd-lato img').forEach(function(img){
+    img.classList.add('apribile');
+    img.addEventListener('click', function(){ apri(img); });
+  });
+  chiudi.addEventListener('click', via);
+  lente.addEventListener('click', function(e){ if(e.target === lente) via(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !lente.hidden) via(); });
+})();
+
+/* ---- i due nastri si muovono da soli, avanti e indietro ----
+   Regole che si e' dovuto rispettare:
+   - lo scorrimento a scatti (scroll-snap) litiga col movimento continuo: lo
+     spengo mentre va da solo e lo riaccendo appena entra il dito, cosi' col
+     dito le foto si incastrano ancora una per volta;
+   - si ferma appena qualcuno tocca, e riparte dopo 4 secondi di calma;
+   - si ferma quando la sezione non e' sullo schermo (batteria) e quando una
+     foto e' aperta grande;
+   - chi ha chiesto al telefono di ridurre le animazioni non lo vede partire;
+   - parte solo dove c'e' davvero da scorrere: sul computer sono griglie,
+     quindi la condizione e' falsa e non fa niente. */
+(function(){
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var lente = document.getElementById('lente');
+  var nastri = ['.striscia', '.pd-griglia'].map(function(s){ return document.querySelector(s); }).filter(Boolean);
+  if (!nastri.length) return;
+
+  nastri.forEach(function(n){
+    var VELOCITA = 22;        // px al secondo: lenta, si legge mentre scorre
+    var SOSTA    = 1100;      // pausa alle due estremita'
+    var DOPO_DITO= 4000;      // quanto resta ferma dopo che l'hai toccata
+    var verso = 1, fermoFino = 0, ultimo = 0, visibile = false, pos = 0;
+    var snapVero = getComputedStyle(n).scrollSnapType || 'x mandatory';
+
+    ['pointerdown','touchstart','wheel'].forEach(function(ev){
+      n.addEventListener(ev, function(){
+        fermoFino = Date.now() + DOPO_DITO;
+        n.style.scrollSnapType = snapVero;
+      }, {passive:true});
+    });
+
+    if (window.IntersectionObserver){
+      new IntersectionObserver(function(voci){
+        visibile = voci[0].isIntersecting;
+      }, {threshold:0.25}).observe(n);
+    } else { visibile = true; }
+
+    function passo(ora){
+      var dt = ultimo ? (ora - ultimo) / 1000 : 0;
+      ultimo = ora;
+      var quanto = n.scrollWidth - n.clientWidth;
+      var attivo = visibile && quanto > 8 && Date.now() > fermoFino && (!lente || lente.hidden);
+      if (attivo){
+        if (n.style.scrollSnapType !== 'none') n.style.scrollSnapType = 'none';
+        /* la posizione si tiene qui: a 22 px/s ogni fotogramma avanza di 0,36
+           px, e riassegnarla leggendo scrollLeft la perdeva ogni volta
+           nell'arrotondamento — il nastro restava fermo per sempre */
+        pos += VELOCITA * dt * verso;
+        if (pos >= quanto){ pos = quanto; verso = -1; fermoFino = Date.now() + SOSTA; }
+        else if (pos <= 0){ pos = 0; verso = 1; fermoFino = Date.now() + SOSTA; }
+        n.scrollLeft = pos;
+      } else {
+        pos = n.scrollLeft;      /* se l'hai mossa col dito, si riparte da li' */
+      }
+      requestAnimationFrame(passo);
+    }
+    requestAnimationFrame(passo);
+  });
+})();
+
+/* ---- il menu a tre righe del telefono ---- */
+(function(){
+  var tasto = document.getElementById('menuTasto');
+  var menu  = document.getElementById('menuPieno');
+  if (!tasto || !menu) return;
+  function mostra(si){
+    menu.hidden = !si;
+    tasto.setAttribute('aria-expanded', si ? 'true' : 'false');
+    tasto.setAttribute('aria-label', si ? 'Chiudi il menu' : 'Apri il menu');
+  }
+  tasto.addEventListener('click', function(e){
+    e.stopPropagation();
+    mostra(menu.hidden);
+  });
+  /* si chiude scegliendo una voce, toccando fuori o con Esc */
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ mostra(false); });
+  });
+  document.addEventListener('click', function(e){
+    if (!menu.hidden && !menu.contains(e.target) && e.target !== tasto) mostra(false);
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && !menu.hidden) mostra(false);
+  });
+})();
+</script>
+</body>
+</html>
